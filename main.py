@@ -21,6 +21,11 @@ def execute_classification_pipeline():
     # 3. Perform inference on hidden validation records
     y_pred_classes = classifier.predict_classes(X_test)
     
+    #y_pred_probs = classifier.predict_probabilities(X_test)
+    #print(y_pred_probs)
+    #print(y_pred_classes)
+
+
     # 4. Extract classification metrics
     compute_classification_scorecard(y_test, y_pred_classes)
 
