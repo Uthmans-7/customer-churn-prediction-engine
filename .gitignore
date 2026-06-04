@@ -1,0 +1,18 @@
+# Local virtual environment isolation
+venv/
+.venv/
+env/
+
+# Python compiled bytecode and caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Serialized model weights (keep binary binaries out of version control)
+models/*.pkl
+
+# System specific files
+.DS_Store
+Thumbs.db
